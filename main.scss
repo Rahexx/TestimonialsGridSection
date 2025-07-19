@@ -1,2 +1,8 @@
 @import './styles/base/reset';
-@import './styles/base/variables';
+@import './styles/utilities/variables';
+
+.container {
+  padding: $space-73 $space-35;
+  background: $purple-50;
+  font-family: $font-primary;
+}
