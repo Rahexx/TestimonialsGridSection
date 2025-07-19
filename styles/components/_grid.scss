@@ -4,4 +4,22 @@
   grid-template-rows: 28.125rem 15.375rem 14.125rem 25.875rem 31.4375rem;
   row-gap: $space-32;
   width: 19.0625rem;
+  margin: $space-73 $space-35;
+
+  &__first {
+    background: $purple-500;
+    &--decoration {
+      display: none;
+    }
+  }
+  &__second {
+    background: $grey-500;
+  }
+  &__third,
+  &__fifth {
+    background: $white;
+  }
+  &__fourth {
+    background: $dark-blue;
+  }
 }

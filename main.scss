@@ -1,9 +1,9 @@
 @import './styles/base/reset';
 @import './styles/utilities/variables';
 @import './styles/components/grid';
+@import './styles/components/article';
 
 .container {
-  padding: $space-73 $space-35;
   background: $purple-50;
   font-family: $font-primary;
 }
