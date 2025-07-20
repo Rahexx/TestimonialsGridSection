@@ -1,4 +1,104 @@
 .article {
   padding: $space-32;
   border-radius: 0.5rem;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: $space-16;
+    margin-bottom: $space-16;
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+    gap: $space-15;
+
+    &--image {
+      display: inline-block;
+      height: 1.75rem;
+      width: 1.75rem;
+      border-radius: 50%;
+      border: 2px solid transparent;
+    }
+
+    &--info {
+      display: flex;
+      flex-direction: column;
+      gap: $space-4;
+    }
+
+    &--name {
+      font-size: $text-13;
+      font-weight: $font-medium;
+      line-height: $line-height-110;
+    }
+
+    &--role {
+      font-size: $text-11;
+      font-weight: $font-medium;
+      line-height: $line-height-110;
+    }
+  }
+
+  &__title {
+    font-size: $text-20;
+    font-weight: $font-semibold;
+    line-height: $line-height-120;
+  }
+
+  &__content {
+    font-size: $text-13;
+    font-weight: $font-medium;
+    line-height: $line-height-140;
+  }
+}
+
+.grid__first {
+  @include article-theme(
+    $image-border: $purple-300,
+    $name-color: $white,
+    $role-color: $purple-50,
+    $title-color: $white,
+    $content-color: $purple-50
+  );
+}
+
+.grid__second {
+  @include article-theme(
+    $name-color: $white,
+    $role-color: $grey-200,
+    $title-color: $white,
+    $content-color: $grey-100
+  );
+}
+
+.grid__third {
+  @include article-theme(
+    $image-border: transparent,
+    $name-color: $grey-500,
+    $role-color: $grey-400,
+    $title-color: $grey-500,
+    $content-color: $grey-400
+  );
+}
+
+.grid__fourth {
+  @include article-theme(
+    $image-border: $purple-300,
+    $name-color: $white,
+    $role-color: $white,
+    $title-color: $grey-200,
+    $content-color: $grey-100
+  );
+}
+
+.grid__fifth {
+  @include article-theme(
+    $image-border: transparent,
+    $name-color: $grey-500,
+    $role-color: $grey-400,
+    $title-color: $grey-500,
+    $content-color: $grey-400
+  );
 }
