@@ -1,0 +1,10 @@
+@import './styles/base/reset';
+@import './styles/utilities/variables';
+@import './styles/utilities/mixins';
+@import './styles/components/grid';
+@import './styles/components/article';
+
+.container {
+  background: $purple-50;
+  font-family: $font-primary;
+}

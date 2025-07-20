@@ -1,0 +1,27 @@
+@mixin article-theme(
+  $image-border: transparent,
+  $name-color: $white,
+  $role-color: $white,
+  $title-color: $white,
+  $content-color: $white
+) {
+  .article {
+    &__author {
+      &--image {
+        border-color: $image-border;
+      }
+      &--name {
+        color: $name-color;
+      }
+      &--role {
+        color: $role-color;
+      }
+    }
+    &__title {
+      color: $title-color;
+    }
+    &__content {
+      color: $content-color;
+    }
+  }
+}
