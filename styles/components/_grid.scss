@@ -23,3 +23,38 @@
     background: $dark-blue;
   }
 }
+
+@media (min-width: $breakpoint-tablet) {
+  .grid {
+    grid-template-columns: 19.21875rem 19.21875rem;
+    grid-template-rows: 16.875rem 15.375rem 16.875rem 17.1875rem;
+    grid-template-areas:
+      'first first'
+      'second third'
+      'fourth fourth'
+      'fifth fifth';
+    column-gap: $space-32;
+    width: 40.4375rem;
+    margin: $space-83 auto;
+
+    &__first {
+      grid-area: first;
+    }
+    &__second {
+      grid-area: second;
+    }
+    &__third {
+      grid-area: third;
+    }
+    &__fourth {
+      grid-area: fourth;
+    }
+    &__fifth {
+      grid-area: fifth;
+    }
+
+    &__first--decoration {
+      display: none;
+    }
+  }
+}
