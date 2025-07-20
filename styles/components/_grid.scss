@@ -35,7 +35,7 @@
       'fifth fifth';
     column-gap: $space-32;
     width: 40.4375rem;
-    margin: $space-83 auto;
+    margin: $space-83 auto 0;
 
     &__first {
       position: relative;
@@ -53,15 +53,31 @@
     &__fifth {
       grid-area: fifth;
     }
-
     &__first--decoration {
       position: absolute;
       top: 0;
-      right: 167px;
+      right: 10.4375rem;
       display: inline-block;
-      height: 104px;
-      width: 102px;
+      height: 6.5rem;
+      width: 6.375rem;
       z-index: 2;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .grid {
+    grid-template-columns: 15.9375rem 17.8125rem 15.9375rem 15.9375rem;
+    grid-template-rows: 18rem 16.875rem;
+    grid-template-areas:
+      'first first second fifth'
+      'third fourth fourth fifth';
+    row-gap: $space-24;
+    width: 69.625rem;
+    margin: $space-229 auto 0;
+
+    &__first--decoration {
+      right: 3.75rem;
     }
   }
 }
