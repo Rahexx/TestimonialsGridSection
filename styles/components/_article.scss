@@ -42,9 +42,11 @@
   }
 
   &__title {
+    position: relative;
     font-size: $text-20;
     font-weight: $font-semibold;
     line-height: $line-height-120;
+    z-index: 4;
   }
 
   &__content {
