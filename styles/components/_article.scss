@@ -102,3 +102,11 @@
     $content-color: $grey-400
   );
 }
+
+@media (min-width: $breakpoint-tablet) {
+  .grid__second {
+    .article__author--role {
+      color: $grey-100;
+    }
+  }
+}
